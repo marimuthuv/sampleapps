@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="GetOfferDetailsResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Return" minOccurs="0" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="NumberOfPages" minOccurs="0" maxOccurs="1" type="xsd:int"/>
+              <xsd:element name="ResponseCode" minOccurs="0" maxOccurs="1" type="xsd:int"/>
+              <xsd:element name="ResponseDescription" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+              <xsd:element name="DetailOfferData" minOccurs="0" maxOccurs="1">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="ActivationStatus" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="BookingEnd" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="BookingStart" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="BuyText" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    <xsd:element name="CampaignType" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="Category" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="ComplimentaryPriceText" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    <xsd:element name="CurrencyCode" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="DisplayEnd" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="DisplayStart" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="EventEnd" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="EventStart" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="Fid" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="FulfillmentPartner" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="PartnerName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="Geo" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="Region" minOccurs="0" maxOccurs="1">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="Country" minOccurs="0" maxOccurs="1">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="Name" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                      <xsd:element name="State" minOccurs="0" maxOccurs="1">
+                                        <xsd:complexType>
+                                          <xsd:sequence>
+                                            <xsd:element name="City" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                            <xsd:element name="Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                          </xsd:sequence>
+                                        </xsd:complexType>
+                                      </xsd:element>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                                <xsd:element name="Name" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="Language" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="LinkedOffer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                    <xsd:element name="MaxUserBuys" minOccurs="0" maxOccurs="1" type="xsd:int"/>
+                    <xsd:element name="Merchant" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="Addresses" minOccurs="0" maxOccurs="1">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="City" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="Country" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="Latitude" minOccurs="0" maxOccurs="1" type="xsd:decimal"/>
+                                <xsd:element name="Longitude" minOccurs="0" maxOccurs="1" type="xsd:decimal"/>
+                                <xsd:element name="Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                <xsd:element name="PostalCode" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="State" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="Street" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                <xsd:element name="Street2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                          <xsd:element name="Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="StoreLocatorUrl" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="WebsiteUrl" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="OfferDisplay" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="Headline" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="LongDescription" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="ShortDescription" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="Subtitle" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="Terms" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="OfferId" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="OfferMedia" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="ImageGalleryTitle" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="OfferImage" minOccurs="0" maxOccurs="1">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="Entry" maxOccurs="unbounded">
+                                  <xsd:complexType>
+                                    <xsd:sequence>
+                                      <xsd:element name="Key" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                      <xsd:element name="Value" minOccurs="0" maxOccurs="1">
+                                        <xsd:complexType>
+                                          <xsd:sequence>
+                                            <xsd:element name="Item" maxOccurs="unbounded">
+                                              <xsd:complexType>
+                                                <xsd:sequence>
+                                                  <xsd:element name="AltText" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                                  <xsd:element name="ImageUrl" minOccurs="0" maxOccurs="1" type="xsd:anyURI"/>
+                                                  <xsd:element name="Description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                                </xsd:sequence>
+                                              </xsd:complexType>
+                                            </xsd:element>
+                                          </xsd:sequence>
+                                        </xsd:complexType>
+                                      </xsd:element>
+                                    </xsd:sequence>
+                                  </xsd:complexType>
+                                </xsd:element>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="OfferType" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="OfferUrl" minOccurs="0" maxOccurs="1" type="xsd:anyURI"/>
+                    <xsd:element name="Price" minOccurs="0" maxOccurs="1" type="xsd:decimal"/>
+                    <xsd:element name="RedemptionAddresses" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="RedemptionAddress" minOccurs="0" maxOccurs="1">
+                            <xsd:complexType>
+                              <xsd:sequence>
+                                <xsd:element name="City" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="Country" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="Latitude" minOccurs="0" maxOccurs="1" type="xsd:decimal"/>
+                                <xsd:element name="Longitude" minOccurs="0" maxOccurs="1" type="xsd:decimal"/>
+                                <xsd:element name="Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                <xsd:element name="PostalCode" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="State" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                                <xsd:element name="Street" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                                <xsd:element name="Street2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="RedemptionCodeType" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="RedemptionType" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="Seo" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="Description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="Keywords" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                          <xsd:element name="Title" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                          <xsd:element name="Url" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="Tag" maxOccurs="unbounded" type="xsd:normalizedString"/>
+                    <xsd:element name="TagCategory" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="TagOfferPrice" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="TagTier" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="TargetFis" minOccurs="0" maxOccurs="1" type="xsd:normalizedString"/>
+                    <xsd:element name="TotalInventory" minOccurs="0" maxOccurs="1" type="xsd:int"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

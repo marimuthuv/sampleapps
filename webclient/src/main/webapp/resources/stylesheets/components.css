@@ -1,0 +1,396 @@
+/***
+ * This file contains styles that are component specific.
+ *  
+ * Please do not include any other styles in here.
+  * ** */
+ 
+ 
+/*** GLOBAL NAV BAR ***/
+#globalNavBar	{ position: absolute; top:80px; z-index: 999;} 
+#globalNavBar a	{ background: #888888; color: #FFFFFF; display: block; padding: 15px 0; font-size: 10px; text-align: center; width: 60px;}
+#globalNavBar a i	{ font-size: 27px; display: block; }
+
+#globalNavBar a:hover	{ text-decoration: none; background: #FFFFFF; color: #666666; }
+
+ 
+/*** PAGE NAV ***/
+#pageNav	{font-size: 12px; text-align: center; margin: 138px 0 0 11px; float: left;}
+#pageNav li	{ }
+#pageNav li a	{ color: #888888; display: block; padding: 20px 10px; width:90px;  }
+#pageNav li a:hover	{ text-decoration: none; }
+#pageNav a i	{  display: block; font-size: 51px; margin: 0 0 10px 0;}
+
+#pageNav li a.active	{ color: #444444; background: #FFFFFF; border: 1px solid #DDDDDD; border-right: 0; }
+
+
+#pageMenu	{ background: #F5F5F5; overflow: hidden; }
+
+#pageMenu li	{float: left;}
+#pageMenu li a	{ color: #888888; display: block; padding: 15px 25px; }
+#pageMenu li a:hover	{ text-decoration: none; background: #EAEAEA; }
+#pageMenu a i	{  display: block; font-size: 51px; margin: 0 0 10px 0;}
+
+#pageMenu li a.active,
+#pageMenu li a.active:hover	{ color: #444444; background: #FFFFFF; }
+
+#pageMenu.solo	{ margin: 0 0 30px 0;border: 1px solid #DDDDDD; font-size: 12px; font-weight: bold; }
+
+
+/*** PAGE FILTERS ***/
+.pageFilters	{ background: #F5F5F5; border: 1px solid #DDDDDD; padding: 10px; }
+.pageFilters table	{ width:100%; }
+.pageFilters table td	{ padding: 0 15px 0 0; }
+.pageFilters .buttonBar	{ padding: 15px 15px 0 15px; margin:20px -10px 0 -10px; border-top: 1px solid #DDDDDD; text-align: right; }
+
+/*** PAGE BUTTON BAR ***/
+.pageButtonBar	{ text-align: right; padding: 15px; border-bottom: 1px solid #DDDDDD; overflow: hidden; }
+
+/*** THUMBNAILS ***/
+.media .defaultThumbnail	{ background: #F5F5F5; width:75px; height: 75px; text-align: center; color: #888888; margin-right: 20px; }
+.media .defaultThumbnail:hover	{ text-decoration: none;}
+
+.media .defaultThumbnail i	{ font-size: 40px; display: block; margin: 15px 0 0 0; }
+
+
+/*** OFFERS LIST ***/
+.offersList	{ margin: 20px 100px 0 0; }
+.offersList .media	{ border-top: 1px dotted #DDDDDD; padding: 20px 10px 0 10px; }
+
+.offersList .offerMeta	{ overflow: hidden; background: #F1F1F1; padding: 15px; float: left; border-radius:5px; }
+.offersList .offerMeta li	{ float: left; mar gin: 0 25px 0 0; text-align: center; border-right:1px solid #CCCCCC; padding: 0 25px; height: 60px;  }
+.offersList .offerMeta li:first-child	{ padding-left: 0; }
+.offersList .offerMeta li:last-child	{ padding-right: 0; border-right:0;  }
+
+.offersList .offerMeta li label	{ font-size: 12px; font-weight: normal; display: block; margin: 0 0 10px 0; }
+.offersList .offerMeta li p	{ font-size: 14px; font-weight: bold; margin:0; }
+.offersList .offerMeta li p i	{ font-size: 29px; margin: 0; }
+
+.offersList .buttonBar	{ clear: both; text-align: right; margin: 10px 0 0 0; display:none; }		
+.offersList .media:hover .buttonBar { display: block;}
+
+/*** TILED THUMBNAILS ***/
+.thumbnailBlurb	{ display: block; width:160px; height: 160px; background: #EAEAEA; text-align: center; padding: 20px 0 0 0; color: #888888;  }
+.thumbnailBlurb:hover		{ text-decoration: none; background: #888888; color: #FFFFFF;  }
+
+
+.thumbnailBlurb i	{ font-size: 91px; display: block; }
+.thumbnailBlurb a span	{ display: block; margin: 4px 0 0 0; font-size: 11px; }
+
+.thumbnailBlurb.large	{ width:100%; padding-top: 10px; }
+
+
+.thumbnailBlurb.med	{ width:111px; height:100px; padding-top: 10px; }
+.thumbnailBlurb.med i	{ font-size: 51px; }
+
+.thumbnailBlurb.small	{ width:50px; height: 50px; }
+
+/*** TILED ALBUM ***/
+.tileAlbum	{ overflow:auto; height: 515px;  }
+.imgTile	{ width:150px; height:150px; background-size: cover; background-position: 50% 25%; background-repeat: no-repeat; float:left; margin: 0 20px 20px 0; border: 1px solid #EAEAEA; }
+.imgTile:hover	{ border:1px solid #888888;}
+
+.mediaObj	{ background: #F4F4F4; padding: 5px; border:1px solid #EAEAEA; margin-bottom: 10px;  }
+.mediaObj .imgTile	{ margin: 0 0 5px 0; width:100%; border: 1px solid #EAEAEA;  }
+.mediaObj .form-group	{ margin-bottom: 5px; }
+
+.albumView	{ overflow:auto;}
+.albumView .item	{ width:200px;margin: 0 20px 20px 0; border: 1px solid #EAEAEA; float:left; }
+.albumView .item:hover	{ border:1px solid #888888; }
+
+.albumView .item .media	{height:189px; background-size: cover; background-position: 50% 25%; background-repeat: no-repeat; position: relative; }
+.albumView .item .media .desc	{ position: absolute; bottom:0; background-color: rgba(0,0,0,0.7); color:#FFFFFF; padding:4px; width:100%; height: 45px;   }
+
+.albumView .item .editLink	{ position:absolute; right:0; background-color: rgba(0,0,0,0.5); padding: 3px 0; display: none;}
+.albumView .item .editLink a	{ padding: 5px 8px; color:#FFFFFF;}
+
+.albumView .item:hover .editLink	{ display: block; }
+
+.albumView .uploadThumbnail	{  background: #EAEAEA; text-align: center;  }
+.albumView .uploadThumbnail a	{ text-decoration: none; font-size: 90px; color:#CCCCCC; display:block; height: 187px; padding: 40px 0 0 0;  }
+.albumView .uploadThumbnail a:hover	{ color:#AAAAAA; }
+
+/*** VARIOUS MODAL WINDOWS ***/
+.successModal .modal-body	{ background: #dff0d8; color: #468847; text-align: center; }
+
+.taskList li	{ margin: 0 0 15px 0; border-bottom: 1px dotted #DDDDDD; padding: 0 0 15px 0; }
+.taskList li:last-child	{ padding-bottom: 0; margin-bottom: 0; border-bottom: 0;}
+.taskList i	{ font-size: 24px; }
+
+.taskList .media-body	{ padding: 5px 0 0 0; }
+
+.steps	{ width:100%; border: 1px solid #DDDDDD; margin: 0 0 25px 0; }
+
+.steps td	{ text-align: left; padding: 10px 15px; border-right: 1px solid #DDDDDD; background: #FFFFFF; }
+.steps td span	{ font-size: 14px;}
+.steps td span:first-child	{ font-weight: bold; font-size: 21px; margin: 0 10px 0 0; vertical-align: middle; }
+
+.steps .active { background: #428bca; color: #FFFFFF; border-color: #FFFFFF; }
+.steps .active p	{ color: #428bca; }
+.steps .complete	{ background: #67aa22; color: #FFFFFF; border-color: #FFFFFF; }
+
+
+
+/*** DATA GRID ***/
+.dataTables_wrapper .top	{display:none;}
+.dataTables_wrapper .bottom	{overflow:auto;	background:#f5f5f5;	border:1px solid #DDDDDD; border-top:1px solid #e6e6e6;	padding:10px; }
+.dataTables_wrapper .bottom .dataTables_filter	{float:left;width:auto;}
+.dataTables_wrapper .bottom .dataTables_paginate	{float:right;}
+
+.dataTables_wrapper .bottom .dataTables_paginate .first,
+.dataTables_wrapper .bottom .dataTables_paginate .previous,
+.dataTables_wrapper .bottom .dataTables_paginate .next,
+.dataTables_wrapper .bottom .dataTables_paginate .last,
+.dataTables_wrapper .bottom .dataTables_paginate .paginate_disabled_previous,
+.dataTables_wrapper .bottom .dataTables_paginate .paginate_disabled_next,
+.dataTables_wrapper .dataTables_length	{display:none;}
+
+.dataTables_wrapper .bottom .dataTables_paginate .paginate_button, 
+.dataTables_wrapper .bottom .dataTables_paginate .paginate_active {border: 1px solid #e0e2da; border-radius: 0;cursor: pointer;color:#3b9dce; margin: 0 3px;background:#f5f5f5; padding: 2px 5px;}
+.dataTables_wrapper .bottom .dataTables_paginate .paginate_active { color:#8f8f86;background:#ffffff;}
+
+.dataTables_wrapper .clear	{clear:none !important;}
+
+.dataTables_wrapper .bottom .dataTables_paginate a:hover	{ text-decoration: none;  }
+
+
+.dataGrid	{ width:100%; border: 1px solid #DDDDDD; background: #FFFFFF; }
+.dataGrid th	{ background: #EAEAEA; padding: 10px 15px; text-align: left; font-size: 12px; border-right: 1px solid #FFFFFF; border-bottom: 1px solid #DDDDDD; vertical-align: top; cursor: pointer; }
+.dataGrid th:last-child	{ border-right:none;}
+
+.dataGrid td	{ padding: 10px 15px; text-align: left; border-right: 1px dotted #DDDDDD; border-bottom: 1px dotted #DDDDDD; vertical-align: top; }
+.dataGrid td:last-child	{ border-right:none;}
+
+.dataGrid tr:last-child td	{ border-bottom: 0; }
+
+.dataGrid td.alignRight	{ text-align: right; }
+
+.dataGrid.borderLess	{ border: 0; }
+.dataGrid.borderLess th,
+.dataGrid.borderLess td	{ border-right: 0; }
+
+.inlineOfferList	{ margin: 10px 0 0 0; border: 1px solid #EAEAEA; background: #F5F5F5; }
+.dataGrid .inlineOfferList td	{ border: 0; border-bottom: 1px dotted #DDDDDD; }
+
+.dataGrid .iconCol	{ width:50px; }
+
+/*** STYLED SELECT BHOXES ***/
+.chosen-container-multi .chosen-choices	{ border-color: #CCCCCC;  }
+.chosen-container-single .chosen-single,
+.chosen-container-multi .chosen-choices li.search-field input[type=text]	{ border-radius:0; border-color: #CCCCCC; height: 33px; background: #ffffff; padding-top: 4px; }
+.chosen-container-single .chosen-single div	{ top:4px; }
+.chosen-container-multi .chosen-choices li.search-field input[type=text]	{ height: 28px; border: 1px solid #CCCCCC;  }
+
+
+/*** FORMS ETC ***/
+.formSection	{ border: 1px solid #DDDDDD;  background: #FFFFFF; margin: 0 0 40px 0; }
+
+.formSection input,
+.formSection textarea	{ font-size: 13px;} 
+
+.formSection .hr	{ border-bottom: 1px dotted #DDDDDD; margin: 10px 0 25px 0; }
+.formSection .buttonBar	{ border-top: 1px solid #DDDDDD; background: #F5F5F5; padding: 15px; text-align: right; margin: 25px -15px -15px -15px; }
+.formButtonBar	{ text-align: right; margin: 0 15px 50px 0; }
+
+.formSection .titleBar	{ overflow: hidden; background: #FFFFFF; padding: 15px; border-bottom: 1px solid #DDDDDD; cursor: pointer; margin: 0; }
+.formSection .titleBar h4	{ margin: 0;}
+
+.formSection .sectionBody	{ margin: 20px 0 0 0; padding: 15px;}
+
+.formSection .hr	{ border-bottom: 1px dotted #CCCCCC; margin: 15px 0 30px 0;}
+
+.formSection .toggleButtonBar	{ clear: both; margin: 20px -15px 0 -15px; border-top:1px dotted #CCCCCC; padding: 15px;}
+
+.offerReviewPage .formSection .form-group label	{ display: block; font-weight: bold; color: #999999;}
+.offerReviewPage .formSection .form-group p	{ font-size: 16px; }
+
+/*** HINT TEXT ***/
+.hintText	{ background: #f5f5f5; border: 1px solid #DDDDDD; padding: 10px; display: none; font-size: 12px; border-radius: 5px; }
+.hintText h5	{ margin: 0 0 10px 0; font-size: 13px; font-weight: bold; }
+
+.hintText.inline	{ display: block; font-size: 11px; clear:both; margin: 5px 0 0 0; border-radius:2px; }
+.hintText.inline p	{ margin: 0; }
+
+/*** DATEPICKERS ***/
+.ui-datepicker { width: 250px; padding: .2em .2em 0; display: none;  border:1px solid #ACACAC; border-bottom:2px solid #ACACAC; background:#FFFFFF; font-size:11px; z-index: 10 !important; }
+.ui-datepicker .ui-datepicker-header { position:relative; padding:4px; font-size:12px; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; width: 1.8em; height: 1.8em; cursor:pointer; }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { }
+.ui-datepicker .ui-datepicker-prev { left:2px; }
+.ui-datepicker .ui-datepicker-next { right:10px; }
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker table {width: 100%; font-size: 12px; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: 7px 5px; text-align: center; font-weight: bold; border: 0;  }
+.ui-datepicker td { border: 0; padding: 1px; }
+
+.ui-datepicker td span,
+ .ui-datepicker td a { display: block; padding: 5px; text-align: right; text-decoration: none; background:#E6E6E6; border: 1px solid #D3D3D3; color: #555555; }
+.ui-datepicker td a:hover, 
+.ui-datepicker td a.ui-state-hover {border: 1px solid #333333; color: #555555; }
+.ui-datepicker td a.ui-state-highlight	{ background:#AAAAAA; color:#333333; border: 1px solid #888888;}
+
+.ui-datepicker td.ui-state-disabled	{opacity: .4;filter:Alpha(Opacity=40)} 
+.ui-datepicker td a.ui-state-active,
+.ui-datepicker td a.ui-state-active:hover	{ border:1px solid #333333; background:#FFFFFF; color:#333333;}
+
+
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; font-size:0em; }
+
+/* RTL support */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/*** TIME PICKER ***/
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 40%; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 40% 10px 10px; }
+
+/*** UI SLIDER ***/
+.ui-slider { position: relative;text-align: left; border: 1px solid #AAAAAA;}
+.ui-slider .ui-slider-handle {position: absolute;z-index: 2;width: 1.3em;height: 1.3em;	cursor: default; background: #AAAAAA;}
+.ui-slider .ui-slider-range {position: absolute;z-index: 1;	font-size: .7em;display: block;	border: 0;	background-position: 0 0;}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {	filter: inherit;}
+.ui-slider-horizontal {	height: .8em;}
+.ui-slider-horizontal .ui-slider-handle {top: -.4em;margin-left: -.6em;}
+.ui-slider-horizontal .ui-slider-range {top: 0;	height: 100%;}
+.ui-slider-horizontal .ui-slider-range-min {left: 0;}
+.ui-slider-horizontal .ui-slider-range-max {right: 0;}
+.ui-slider-vertical {width: .8em;height: 100px;}
+.ui-slider-vertical .ui-slider-handle {	left: -.3em;margin-left: 0;	margin-bottom: -.6em;}
+.ui-slider-vertical .ui-slider-range {left: 0;width: 100%;}
+.ui-slider-vertical .ui-slider-range-min {bottom: 0;}
+.ui-slider-vertical .ui-slider-range-max {top: 0;}
+
+
+/*** LOCATIONS SET ***/
+.multiSelect	{ margin: 10px 0 10px 0; }
+.multiSelect .branch	{ border: 1px solid #EAEAEA; padding: 10px; margin-bottom: 15px;}
+
+
+
+/*** INFO CARDS ***/
+.infoCard	{ border:1px solid #DDDDDD; }
+.infoCard .title	{ overflow: hidden; border-bottom:1px solid #DDDDDD; padding: 10px 15px; }
+.infoCard .title h4	{ margin: 0; }
+.infoCard table	{ width:100%; }
+.infoCard td	{ padding: 10px 15px; border-bottom: 1px dotted #DDDDDD; }
+.infoCard tr td:first-child	{ font-weight: bold; }
+
+
+/*** LOCATIONS LIST ***/
+#locationsList li,
+.locationsList li	{ border:1px solid #DDDDDD; width:175px; height: 100px; font-size: 12px; cursor: pointer; padding: 5px;  }
+#locationsList li:hover,
+.locationsList li:hover	{ background: #EAEAEA; }
+#locationsList li.selected,
+#locationsList li.selected:hover	{ background: #EAEAEA; }
+
+/*** AUTOCOMPLETE ***/
+.ui-autocomplete	{ height: 250px; overflow-y: auto;}
+.ui-menu { list-style:none; padding: 2px; margin: 0; display:block; float: left; background:#FFFFFF; border:1px solid #aaa; z-index: 9999; box-shadow: 0 4px 5px rgba(0,0,0,.15); border-top: 0;}
+.ui-menu .ui-menu { margin-top: -3px; }
+.ui-menu .ui-menu-item { margin:0; padding: 0; zoom: 1; float: left; clear: left; width: 100%; color:#333333; }
+.ui-menu .ui-menu-item a { text-decoration:none; display:block; padding:10px 5px; line-height:1.5; zoom:1; color: #333333; }
+.ui-menu .ui-menu-item a img	{ border: 1px solid #DDDDDD; margin: 0 10px 0 0; width:30px; height: 30px; }
+.ui-menu .ui-menu-item a:hover,
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item.focus { font-weight: normal; 
+	background-color:#3875d7;
+	background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#3875d7),color-stop(90%,#2a62bc));
+	background-image:-webkit-linear-gradient(#3875d7 20%,#2a62bc 90%);
+	background-image:-moz-linear-gradient(#3875d7 20%,#2a62bc 90%);
+	background-image:-o-linear-gradient(#3875d7 20%,#2a62bc 90%);
+	background-image:linear-gradient(#3875d7 20%,#2a62bc 90%);
+	color:#fff;
+}
+.ui-helper-hidden-accessible	{ display: none; }
+
+
+
+/*** BLURB ***/
+.blurb	{ border: 1px solid #EAEAEA; background: #F4F4F4; padding: 10px; margin: 0 0 20px 0; }
+
+/*** FILE UPLOADS ***/
+.progressbar	{ margin: 5px 0; }
+.progressbar .bar	{width: 0%; background:#5cb85c; height:10px; border-radius:4px;}
+.progressbar .bar.errorBar	{ background:#CC0000; }
+.errorBlock	{ font-size: 11px; color:#CC0000; }
+.successBlock	{ font-size: 11px; color:#5cb85c``; }
+
+/*** INSET ICONS ***/
+.insetIconWrapper	{ position: relative}
+.insetIconWrapper .insetIcon	{ position: absolute; font-size: 15px; color:#AAAAAA; top:5px; right:8px;}
+
+
+
+
+/*** EXPLORE TILE ***/
+.tile	{ border: 1px solid #DDDDDD; padding: 4px; background: #FFFFFF; margin: 0 0 20px 0; }
+.tile img	{ width:100%; border: 1px solid #DDDDDD; background: #EAEAEA; height: 160px; }
+.tileContent	{ padding: 5px; }
+.tileContent h5	{ font-weight: bold; height: 30px; }
+
+.offer-desc {height:100px;}
+
+.offerDetailsWhite	{ background: #FFFFFF; border: 1px solid #DDDDDD; padding: 10px; }
+.offerDetailsWhite img	{ width: 100%; }
+.offerDetailsWhite p	{ line-height: 21px; margin-bottom: 20px; }
+
+.merchantDetails	{ background: #E1E1E1; padding: 10px;}
+.merchantDetails img	{ width: 100%; margin-bottom: 20px; }
+.merchantDetails p	{ line-height: 21px; margin-bottom: 15px; }
+
+.carousel-caption a	{ text-decoration: none; color: #FFFFFF; font-size: 36px; font-weight: bold; text-shadow: 2px 2px #000000; }
+.carousel-caption a:hover	{ text-decoration: none; }
+
+.navbar	{ background: #333333; }
+
+.citiesMenu	{ font-size: 12px !important; width: 600px; padding: 8px 10px 0 10px; background:rgba(0,0,0,0.9); color: #eaeaea; left:inherit; right:-10px; margin-top: 10px; border-radius:0; border: 1px solid #000000; }
+.citiesMenu a	{ display: block; margin: 0 0 10px 0; font-weight: normal; color: #3ccfff; }
+.citiesMenu .global	{ border-bottom: 1px dotted #FFFFFF; padding: 5px 0; margin-bottom: 15px; }
+.citiesMenu .global	a	{ font-weight: bold !important;}
+
+.geoCityBar	{ padding: 0 0 20px 0;}
+.geoCityBar .citySelector	{ background:rgba(0,0,0,0.9); padding: 10px;}
+.geoCityBar .citySelector .topLink	{ display: block; color:#EAEAEA; }
+.geoCityBar .citySelector .topLink:hover	{text-decoration:none; color:#FFFFFF; }
+.geoCityBar .citySelector .topLink .caret	{ margin:7px 10px 0 0; }

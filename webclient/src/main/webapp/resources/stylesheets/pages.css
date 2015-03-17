@@ -1,0 +1,21 @@
+/*** OFFER CREATION SCREENS ***/
+#addressLookupModal .modal-dialog	{ width:900px;  }
+
+
+/*** IFRAME PAGE ***/
+.iframePageContent	{ }
+.iframePageContent .pageTitle	{border-bottom: 1px solid #DDDDDD;margin: 0 0 25px 0; padding: 15px;}
+.iframePageContent .pageBody	{ padding: 15px; min-height: 590px;}
+.iframePageContent .pageFooter	{}
+
+
+/*** LOCATIONS BLURB ***/
+#selectedRedemptionLocationsList { overflow: auto; }
+#selectedRedemptionLocationsList div	{ float:left; border: 1px solid #EAEAEA; background: #FFFFFF; padding: 5px; margin:0 10px 10px 0; width:200px;  }
+.iframePageContent.locationUpdate .pageBody	{ padding: 15px; min-height: 605px;}
+
+
+
+.offerDashboard .pageButtonBar	{ overflow:visible; height:65px; }
+
+
